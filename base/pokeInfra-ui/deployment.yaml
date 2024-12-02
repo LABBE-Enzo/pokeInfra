@@ -20,17 +20,17 @@ spec:
         - name: POKEDEX_NAME
           valueFrom:
             configMapKeyRef:
-              name: api-cm
+              name: pokedex-cm
               key: NAME
         - name: POKEDEX_START_NUMBER
           valueFrom:
             configMapKeyRef:
-              name: api-cm
+              name: pokedex-cm
               key: START
         - name: POKEDEX_END_NUMBER
           valueFrom:
             configMapKeyRef:
-              name: api-cm
+              name: pokedex-cm
               key: END
         ports:
         - containerPort: 3000
