@@ -4,3 +4,6 @@ metadata:
   name: pokedex-cm
 data:
   API_URL: "http://google.fr"
+  NAME: "base"
+  START: "1"
+  STOP: "100"
