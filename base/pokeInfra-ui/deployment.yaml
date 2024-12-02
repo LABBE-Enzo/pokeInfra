@@ -16,5 +16,21 @@ spec:
       containers:
       - image: pokeapi:0.1
         name: pokedex-ui
+        env:
+        - name: POKEDEX_NAME
+          valueFrom:
+            configMapKeyRef:
+              name: api-cm
+              key: NAME
+        - name: POKEDEX_START_NUMBER
+          valueFrom:
+            configMapKeyRef:
+              name: api-cm
+              key: START
+        - name: POKEDEX_END_NUMBER
+          valueFrom:
+            configMapKeyRef:
+              name: api-cm
+              key: START
         ports:
         - containerPort: 3000
