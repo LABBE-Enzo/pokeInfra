@@ -5,7 +5,3 @@ resources:
 - ../../base/
 
 namespace: prod
-
-images:
-- name: docker.io/library/pokeapi
-  newTag: "0.1"

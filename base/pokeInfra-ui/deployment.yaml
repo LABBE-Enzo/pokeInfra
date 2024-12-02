@@ -14,7 +14,6 @@ spec:
         app: pokedex-ui
     spec:
       containers:
-      - image: docker.io/library/pokeapi:0.1
-        name: pokedex-ui
+      - image: pokeapi:0.1
         ports:
         - containerPort: 3000
