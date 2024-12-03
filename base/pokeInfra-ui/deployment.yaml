@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       #- image: pokeapi:0.1
-      - image: ghcr.io/froissant/pokedex
+      - image: ghcr.io/froissant/pokedex:main
         name: pokedex-ui
         env:
         - name: POKEDEX_NAME
